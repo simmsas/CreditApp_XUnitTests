@@ -1,0 +1,16 @@
+Task
+
+Create a REST service in C# that will be used in credit applications to return a decision and interest rate.
+- The service should accept a credit amount, the term (repayment in months), current preexisting credit amount
+- Validation should check for necessary inputs
+- No requirement to log the request
+- There is no need to implement security at this time
+- Consider which unit tests are required
+
+The service should return a decision and an interest rate percentage, based on the following rules:
+
+Applied amount / <2000 / >2000 / >69000
+Decision          No      Yes      No
+
+Total future debt / <20000 / 20000-39000 / 40000-59000  / >60000
+Interest rate %        3          4             5           6
